@@ -27,6 +27,7 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
+  background-color: #ffffff;
 }
 .navbar__body {
   display: flex;
@@ -230,4 +231,77 @@ body {
   }
 }
 @media (max-width: 480px) {
+}
+
+.tab {
+  margin-top: 120px;
+  padding: 67px 0 34px 0;
+  background-color: #3fc1b3;
+}
+.tab__row {
+}
+.tab__column {
+}
+.tab__switch {
+  display: flex;
+  justify-content: center;
+}
+.tab__switch label {
+  margin-right: 10px;
+}
+label input {
+  display: none;
+}
+label span {
+  height: 9px;
+  width: 9px;
+  border: 1px solid #c8c8c8;
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+label [type="radio"]:checked + span {
+  content: "";
+  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.tab__content {
+}
+.tab__block {
+  margin: 0 0 11px 60px;
+}
+.tab__image {
+  flex: 0 0 278px;
+  margin-right: 100px;
+}
+.tab__image img {
+  width: 100%;
+}
+
+.tab__body {
+}
+.tab__title {
+  font-size: 61px;
+  line-height: 54px;
+  color: #ffffff;
+  margin: 16px 0 26px 0;
+}
+.tab__text {
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 29px;
+  max-width: 404px;
+}
+.tab__button {
+  display: inline-block;
+  height: 46px;
+  font-size: 27px;
+  line-height: 19px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 13px 28px;
 }
